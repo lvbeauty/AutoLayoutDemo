@@ -12,6 +12,6 @@ extension UIButton {
     func roundCornerWithBorder() {
         self.layer.cornerRadius = 5
         self.layer.borderWidth = 1
-        self.layer.borderColor = (UIColor.white.withAlphaComponent(0.5) as! CGColor)
+        self.layer.borderColor = CGColor(srgbRed: 1, green: 1, blue: 1, alpha: 0.5)
     }
 }

@@ -14,6 +14,7 @@
 		24A5F57A24D05AD40091D1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5F57924D05AD40091D1DB /* Assets.xcassets */; };
 		24A5F57D24D05AD40091D1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A5F57B24D05AD40091D1DB /* LaunchScreen.storyboard */; };
 		24A5F58524D071060091D1DB /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5F58424D071060091D1DB /* UIButton+Ext.swift */; };
+		24B6BFE524D363A8008221E6 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B6BFE424D363A8008221E6 /* UITextField+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		24A5F57C24D05AD40091D1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A5F57E24D05AD40091D1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A5F58424D071060091D1DB /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		24B6BFE424D363A8008221E6 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,31 @@
 			children = (
 				24A5F57024D05AD00091D1DB /* AppDelegate.swift */,
 				24A5F57224D05AD00091D1DB /* SceneDelegate.swift */,
+				24B6BFE624D363AD008221E6 /* Common */,
 				24A5F57424D05AD00091D1DB /* ViewController.swift */,
 				24A5F57624D05AD00091D1DB /* Main.storyboard */,
-				24A5F57924D05AD40091D1DB /* Assets.xcassets */,
 				24A5F57B24D05AD40091D1DB /* LaunchScreen.storyboard */,
-				24A5F57E24D05AD40091D1DB /* Info.plist */,
-				24A5F58424D071060091D1DB /* UIButton+Ext.swift */,
+				24B6BFE724D36AAB008221E6 /* SupportFile */,
 			);
 			path = AutoLayoutDemo;
+			sourceTree = "<group>";
+		};
+		24B6BFE624D363AD008221E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				24A5F58424D071060091D1DB /* UIButton+Ext.swift */,
+				24B6BFE424D363A8008221E6 /* UITextField+Ext.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		24B6BFE724D36AAB008221E6 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				24A5F57924D05AD40091D1DB /* Assets.xcassets */,
+				24A5F57E24D05AD40091D1DB /* Info.plist */,
+			);
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24A5F57524D05AD00091D1DB /* ViewController.swift in Sources */,
+				24B6BFE524D363A8008221E6 /* UITextField+Ext.swift in Sources */,
 				24A5F57124D05AD00091D1DB /* AppDelegate.swift in Sources */,
 				24A5F57324D05AD00091D1DB /* SceneDelegate.swift in Sources */,
 				24A5F58524D071060091D1DB /* UIButton+Ext.swift in Sources */,
@@ -289,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogInProj/Info.plist;
+				INFOPLIST_FILE = AutoLayoutDemo/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogInProj/Info.plist;
+				INFOPLIST_FILE = AutoLayoutDemo/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
