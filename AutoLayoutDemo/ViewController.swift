@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         passwordTF.underLineTF()
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        usernameTF.underLineTF()
-        passwordTF.underLineTF()
-    }
+//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//        usernameTF.underLineTF()
+//        passwordTF.underLineTF()
+//    }
 }
 
